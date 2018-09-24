@@ -8,7 +8,7 @@ branches:
 notifications:
   email:
     recipients:
-    - j.bernal@upm.es
+    - cesargayo@gmail.com
 services:
 - mysql
 before_install:
