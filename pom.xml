@@ -110,5 +110,11 @@
 			</roles>
 		</developer>
 	</developers>
-
+	<distributionManagement>
+		<repository>
+			<id>IWCG.SwC.CesarGayo</id>
+			<name>IWCG.SwC.CesarGayo</name>
+			<url>https://github.com/drachodran/IWVG.SwC.CesarGayo</url>
+		</repository>
+	</distributionManagement>
 </project>
