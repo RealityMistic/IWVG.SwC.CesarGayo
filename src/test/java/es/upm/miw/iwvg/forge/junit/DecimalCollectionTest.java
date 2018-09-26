@@ -51,4 +51,13 @@ class DecimalCollectionTest {
         assertThrows(ArithmeticException.class, () -> new DecimalCollection().higher());
     }
 
+    @Test
+    void testMedia() {
+        DecimalCollection decimalCollection = new DecimalCollection();
+        decimalCollection.add(3);
+        decimalCollection.add(-1);
+        decimalCollection.add(4);
+        assertEquals(2, decimalCollection.media());
+    }
+
 }
