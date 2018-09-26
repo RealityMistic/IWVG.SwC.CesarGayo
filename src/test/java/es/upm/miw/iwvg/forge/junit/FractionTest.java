@@ -33,5 +33,15 @@ class FractionTest {
         assertEquals(2, fraction.getDenominator());
     }
 
+    @Test
+    void testEsMayor() {
+        assertTrue(fraction.esMayor(propiaFraction));
+    }
+
+    @Test
+    void testEsMenor() {
+        assertTrue(propiaFraction.esMenor(fraction));
+    }
+
 
 }
