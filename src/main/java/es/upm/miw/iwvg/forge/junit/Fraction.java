@@ -53,4 +53,12 @@ public class Fraction {
         return denominator;
     }
 
+    public boolean esMayor(Fraction fraction) {
+        return this.getNumerator() / this.getDenominator() > fraction.getNumerator() / fraction.getDenominator();
+    }
+
+    public boolean esMenor(Fraction fraction) {
+        return this.getNumerator() / this.getDenominator() < fraction.getNumerator() / fraction.getDenominator();
+    }
+
 }
