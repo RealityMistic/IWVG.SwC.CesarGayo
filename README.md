@@ -1,14 +1,10 @@
-# Forja
-> Este proyecto pretende ser un ejemplo de preparación de una forja para el desarrollo de software colaborativo
+# Práctica de Software Colaborativo IWVG del MiW 2018-2019
+> Basado en el proyecto forja para el desarrollo de software colaborativo, consiste en una práctica de colaboración
 > ##### [Máster en Ingeniería Web por la Universidad Politécnica de Madrid (miw-upm)](http://miw.etsisi.upm.es)
 > ##### Asignatura: *Ingeniería Web: Visión General*
 
 ### Estado del código
-
-[![Build Status](https://travis-ci.org/miw-upm/IWVG-forge.svg?branch=develop)](https://travis-ci.org/miw-upm/IWVG-forge)
-
-![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=es.upm.miw%3AIWVG-forge&metric=alert_status)
-
+El proyecto ha sido preparado para la aportación simultánea de tres programadores.
 
 ### Tecnologías necesarias
 * Java
