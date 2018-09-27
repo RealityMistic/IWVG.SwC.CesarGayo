@@ -36,9 +36,9 @@ class FractionTest {
 
     @Test
     void testIsEquivalent() {
-        Fraction fractionA = new Fraction(this.fraction.getDenominator(), this.fraction.getNumerator());
+        Fraction fractionA = new Fraction(this.fraction.getNumerador() * 3, this.fraction.getDenominator() * 3);
         assertTrue(this.fraction.isEquivalent(fractionA));
-        Fraction fractionB = new Fraction(this.fraction.getNumerator(), this.fraction.getDenominator());
+        Fraction fractionB = new Fraction(this.fraction.getNumerator() * 2, this.fraction.getDenominator() * 3);
         assertFalse(this.fraction.isEquivalent(fractionB));
     }
 }
