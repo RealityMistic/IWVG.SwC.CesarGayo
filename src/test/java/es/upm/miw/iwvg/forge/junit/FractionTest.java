@@ -41,4 +41,16 @@ class FractionTest {
         Fraction fractionB = new Fraction(this.fraction.getNumerator() * 2, this.fraction.getDenominator() * 3);
         assertFalse(this.fraction.isEquivalent(fractionB));
     }
+
+    @Test
+    void testIsPropia() {
+        assertTrue(propiaFraction.isPropia());
+        assertFalse(fraction.isPropia());
+    }
+
+    @Test
+    void testIsImpropia() {
+        assertTrue(fraction.isImpropia());
+        assertFalse(propiaFraction.isImpropia());
+    }
 }
