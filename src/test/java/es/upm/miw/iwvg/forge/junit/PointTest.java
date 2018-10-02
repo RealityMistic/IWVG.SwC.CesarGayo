@@ -10,7 +10,7 @@ class PointTest {
 
     @BeforeEach
     void before() {
-        point = new Point(2, 3);
+        point = new Point(2, 3, 4);
     }
 
     @Test
@@ -24,6 +24,7 @@ class PointTest {
         point = new Point(2);
         assertEquals(2, point.getX());
         assertEquals(2, point.getY());
+        assertEquals(2, point.getZ());
     }
 
     @Test
@@ -31,6 +32,7 @@ class PointTest {
         point = new Point();
         assertEquals(0, point.getX());
         assertEquals(0, point.getY());
+        assertEquals(0, point.getZ());
     }
 
     @Test
@@ -50,4 +52,14 @@ class PointTest {
         assertEquals(2, point.getY());
     }
 
+    @Test
+    void testSet(){
+        Point mPoint = new Point();
+        mPoint.setX(4);
+        mPoint.setY(5);
+        mPoint.setZ(6);
+        assertEquals(4, mPoint.getX());
+        assertEquals(5, mPoint.getY());
+        assertEquals(6, mPoint.getZ());
+    }
 }
