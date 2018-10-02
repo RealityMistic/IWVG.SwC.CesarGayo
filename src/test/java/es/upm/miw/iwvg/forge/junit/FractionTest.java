@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class FractionTest {
@@ -33,5 +34,11 @@ class FractionTest {
         assertEquals(2, fraction.getDenominator());
     }
 
-
+    @Test
+    void testIsEquivalent() {
+        Fraction fractionA = new Fraction(this.fraction.getNumerator() * 3, this.fraction.getDenominator() * 3);
+        assertTrue(this.fraction.isEquivalent(fractionA));
+        Fraction fractionB = new Fraction(this.fraction.getNumerator() * 2, this.fraction.getDenominator() * 3);
+        assertFalse(this.fraction.isEquivalent(fractionB));
+    }
 }
